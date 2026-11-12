@@ -1,7 +1,6 @@
 name: Check Milestone
 on:
-  milestone:
-    types: [created, opened, edited]
+  workflow_dispatch:
 env:
   DUE_ON: ${{ github.event.milestone.due_on }}
   TITLE: ${{ github.event.milestone.title }}
